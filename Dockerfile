@@ -1,7 +1,5 @@
 FROM ubuntu:16.04
 
-MAINTAINER Andrey Mamaev <asda@asda.ru>
-
 ENV MYSQLTMPROOT toor
 
 RUN echo mysql-server mysql-server/root_password password $MYSQLTMPROOT | debconf-set-selections;\
