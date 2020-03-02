@@ -6,7 +6,7 @@ Freeradius server with web interface, - best decision fore manage a lot of hotsp
 ## How to use:
 ### Start freeradius container:
 ```console
-	docker run --name freeradius -d -p 1812:1812/udp -p 1813:1813/udp -p 80:80 -e CLIENT_SECRET=<Radius secret> -e CLIENT_NET=<client net>  asdaru/freeradius-mysql-daloradius
+docker run --name freeradius -d -p 1812:1812/udp -p 1813:1813/udp -p 80:80 -e CLIENT_SECRET=<Radius secret> -e CLIENT_NET=<client net>  andrey0001/freeradius-mysql-daloradius
 ```
 #### `CLIENT_SECRET`
 Radius secret fo NAS devices
