@@ -31,7 +31,7 @@ sed -i -e 's|sqltrace = no|sqltrace = yes|g' /etc/freeradius/sql.conf
 
 
 
-sed -i -e "s/readclients = yes/nreadclients = yes/" /etc/freeradius/sql.conf
+sed -i -e "s/#readclients = yes/readclients = yes/" /etc/freeradius/sql.conf
 echo -e "\nATTRIBUTE Usage-Limit 3000 string\nATTRIBUTE Rate-Limit 3001 string" >> /etc/freeradius/dictionary
 
 
