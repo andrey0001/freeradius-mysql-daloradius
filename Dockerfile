@@ -20,8 +20,8 @@ ENV CLIENT_SECRET testing123
 RUN wget https://github.com/lirantal/daloradius/archive/master.zip && \
 	unzip *.zip && \
 	mv daloradius-master /var/www/daloradius && \
- 	chown -R www-data:www-data /var/www/daloradius && \
-	cp /var/www/daloradius/library/daloradius.conf.php.sample /var/www/daloradius/library/daloradius.conf.php && \
+ 	cp /var/www/daloradius/library/daloradius.conf.php.sample /var/www/daloradius/library/daloradius.conf.php && \
+	chown -R www-data:www-data /var/www/daloradius && \
 	chmod 644 /var/www/daloradius/library/daloradius.conf.php && \
 	rm /etc/nginx/sites-enabled/default
 
