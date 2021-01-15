@@ -7,6 +7,7 @@ flush privileges;"
 
 mysql -uradius --password=$RADIUS_DB_PWD radius  < /etc/freeradius/sql/mysql/schema.sql
 mysql -uradius --password=$RADIUS_DB_PWD radius  < /etc/freeradius/sql/mysql/nas.sql
+mysql -uradius --password=$RADIUS_DB_PWD radius  < /etc/freeradius/sql/mysql/ippool.sql
 mysql -uradius --password=$RADIUS_DB_PWD radius  < /var/www/daloradius/contrib/db/mysql-daloradius.sql
 
 
