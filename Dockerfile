@@ -24,6 +24,7 @@ RUN wget https://github.com/lirantal/daloradius/archive/master.zip && \
  	cp /var/www/daloradius/library/daloradius.conf.php.sample /var/www/daloradius/library/daloradius.conf.php && \
 	chown -R www-data:www-data /var/www/daloradius && \
 	chown www-data:www-data /var/www/daloradius/var/backup && \
+	chmod 777 /var/www/daloradius/var/backup && \
 	chmod 644 /var/www/daloradius/library/daloradius.conf.php && \
 	rm /etc/nginx/sites-enabled/default
 
