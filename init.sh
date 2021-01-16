@@ -47,5 +47,5 @@ echo "client $CLIENT_NET {
     	shortname       = clients 
 }" >> /etc/freeradius/clients.conf
 fi 
-
+chown -R www-data:www-data /var/www/daloradius/var
 mkdir /run/php
